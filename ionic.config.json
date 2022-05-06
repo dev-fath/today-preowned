@@ -1,0 +1,7 @@
+{
+  "name": "today-preowned",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
