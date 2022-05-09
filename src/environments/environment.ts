@@ -8,7 +8,7 @@ import base from './base';
 export const environment: EnvironmentInterface = {
   ...base,
   production: false,
-  apiUrl: '',
+  apiUrl: '/api',
   envName: 'dev',
 };
 

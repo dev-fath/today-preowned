@@ -10,6 +10,9 @@ export class HomePage {
   constructor(private data: DataService) {}
 
   refresh(ev) {
+    this.data.loadOnSaleItems().subscribe((res) => {
+      console.log(res);
+    });
     setTimeout(() => {
       ev.detail.complete();
     }, 3000);
@@ -18,5 +21,4 @@ export class HomePage {
   getMessages(): Message[] {
     return this.data.getMessages();
   }
-
 }
